@@ -1,0 +1,11 @@
+color pallete = https://www.bing.com/images/search?view=detailV2&ccid=rHjfH1bi&id=986D9E47CAB3B4BDE5316F7285A95FACB1D53A15&thid=OIP.rHjfH1biaXefU5OJxkiBPAHaD7&mediaurl=https%3a%2f%2fi.pinimg.com%2foriginals%2f6f%2f32%2f1b%2f6f321b02e98bb56d5e43b8120112f335.png&exph=265&expw=500&q=dark+pastel+color+palette&simid=608032958542978294&FORM=IRPRST&ck=1BAC7AC72A5CB623651B8734ABC73655&selectedIndex=9&ajaxhist=0&ajaxserp=0
+#2B1C2f - DARK VIOLET
+#143F46 - STEEL
+#2A695E - BLUE GREEN
+#8D8171 - BROWN
+#CBB89A -LIGHT BROWN
+
+
+#0a0a0a,#012120,#0a2328, #013a33, #2A695E 
+
+https://www.youtube.com/watch?v=gmY-AUbdTUo
