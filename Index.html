@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <!-- <link rel="stylesheet" href="/script.js"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <title>Lucky B. Combinido</title>
 </head>
@@ -42,13 +43,13 @@
             <h3 class="name"> My name is <span>Lucky B. Combinido</span></h3>
             <h3 class="position"> I am a <span class="typing-text">Software Engineer</span></h3>
 
-            <a href="#"><button class="btn">Schedule a meeting!</button></a>
+            <a href="#contact"><button class="btn">GET IN TOUCH!</button></a>
             
             <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
+                <a href="https://www.facebook.com" class="fab fa-facebook-f"></a>
+                <a href="https://accounts.google.com/Login" class="fa-solid fa-envelope"></a>
+                <a href="https://www.instagram.com" class="fab fa-instagram"></a>
+                <a href="https://www.linkedin.com" class="fab fa-linkedin"></a>
             </div>
         </section>
 
@@ -81,11 +82,11 @@
                     <h3>college</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, animi! Suscipit consequuntur quas earum excepturi provident aut fugit ipsam nostrum.</p>
                 </div>
-                <div class="box">
+                <!-- <div class="box">
                     <div class="year">2006 - 2011</div>
                     <h3>grade school</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, animi! Suscipit consequuntur quas earum excepturi provident aut fugit ipsam nostrum.</p>
-                </div>
+                </div> -->
             </div>
 
         </section>
@@ -175,20 +176,20 @@
                     <input type="text" class="box" placeholder="Email">
                     <input type="text" class="box" placeholder="Project">
                     <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
-                    <input type="submit" value="message" class="btn">
+                    <input type="submit" value="send" class="btn">
                 </form>
 
                 <div class="content">
                     <div class="icons">
-                        <h3><i class="fas fa-map-market-alt"></i>address</h3>
-                        <p>b119 l21 p7, carissa homes punta 1, tanza, cavite</p>
+                        <h3><i class="fa-solid fa-location-dot"></i>address</h3>
+                        <p>B119 L21 P7, Carissa Homes Punta 1, Tanza, Cavite</p>
                     </div>
                     <div class="icons">
                         <h3><i class="fas fa-envelope"></i>email</h3>
                         <p>luckycombinido@gmail.com</p>
                     </div>
                     <div class="icons">
-                        <h3><i class="fas fa-phone"></i>email</h3>
+                        <h3><i class="fas fa-phone"></i>phone</h3>
                         <p>+63-975-635-4952</p>
                         <p>+63-976-291-9110</p>
                         <p>+63-912-437-1514</p>
@@ -196,26 +197,30 @@
                 </div>
             </div>
         </section>
-
+    </div>  
     <!-- content section ends-->
 
-    <!-- type.js cdn link-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
- 
-    <script>
-        var type = new Typed('.typing-text',{
-            strings: [ '', 'web designer', 'front end developer', 'software engineer'],
-            typeSpeed: 120,
-            loop:true
-        });
-    </script>
+    <!-- theme to toggler -->
+
+    <div class="theme-toggler">
+        <span style="background: linear-gradient(#2A695E,#013a33 ,#0a2328, #012120,#0a0a0a);"></span>
+        <span style="background: linear-gradient(#DCD7C9,#A27B5C ,#3F4E4F, #2C3639);"></span>
+        <span style="background: linear-gradient(#ECB365,#064663 ,#04293A, #041C32);"></span>
+        <span style="background: linear-gradient(#8FD6E1,#1597BB ,#150E56, #7B113A);"></span>
+        <span style="background: linear-gradient(#B5927F,#A17A69 ,#03506F, #0A043C);"></span>
+        <span style="background: linear-gradient(#14FFEC,#476D7C ,#254B62, #1D3E53);"></span>
     </div>
 
+    
 
 
 
     <!-- <footer>
         <p>Lucky B. Combinido, Copyright &copy; 2022</p>
     </footer> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+    <script type="text/javascript" src="/script.js">
+    </script>
 </body>
 </html>

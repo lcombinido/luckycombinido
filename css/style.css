@@ -119,7 +119,7 @@ header .navbar ul li a:hover{
 
 .container{
     height: 59rem;
-    width: 100rem;
+    width: 95rem;
     background: rgba(255, 255, 255, .2);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
     backdrop-filter: blur(.4rem);
@@ -264,7 +264,7 @@ header .navbar ul li a:hover{
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
     background-color: rgba(255, 255, 255, .2);
     text-align: center;
-    width: 41rem;
+    width: 38rem;
     height: 15rem;
 }
 .service .box-container .box i{
@@ -342,6 +342,7 @@ header .navbar ul li a:hover{
     display: flex;
     justify-content: space-between;
     padding-top: 7rem;
+    align-items: center;
 }
 
 .contact .row form{
@@ -375,4 +376,51 @@ header .navbar ul li a:hover{
     height: 15rem;
     resize: none;
     width: 100%;
+}
+
+.contact .row form .send{
+    margin-bottom: 1rem;
+}
+
+.contact .row .content{
+    padding: 0 5rem;
+}
+
+.contact .row .content .icons{
+    padding: 1rem 0;
+}
+
+.contact .row .content .icons h3{
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: #fff;
+    display: flex;
+}
+
+.contact .row .content .icons h3 i{
+    padding-right: .5rem;
+}
+
+.contact .row .content .icons p{
+    font-size: 1.5rem;
+    color: #eee;
+    text-transform: none;
+}
+
+.theme-toggler{
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    border-radius: 1rem;
+    backdrop-filter: blur(.4rem);
+}
+
+.theme-toggler span{
+    display: block;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 2rem 2.5rem;
+    box-shadow: 0 0 0 .5rem rgba(255, 255, 255, .2),
+                0 1rem 2rem rgba(0,0,0,.4);
 }

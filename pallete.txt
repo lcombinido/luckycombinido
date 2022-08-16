@@ -9,3 +9,11 @@ color pallete = https://www.bing.com/images/search?view=detailV2&ccid=rHjfH1bi&i
 #0a0a0a,#012120,#0a2328, #013a33, #2A695E 
 
 https://www.youtube.com/watch?v=gmY-AUbdTUo
+
+
+     <span style="background: linear-gradient(#2A695E,#013a33 ,#0a2328, #012120,#0a0a0a);"></span>
+        <span style="background: linear-gradient(#F6DAE4,#D4F0F7 ,#D0D5F7, #B8CFEC);"></span>
+        <span style="background: linear-gradient(#FBEEE6,#FFE5D8 ,#FFCAD4, #F3ABB6);"></span>
+        <span style="background: linear-gradient(#F8B195,#F67280 ,#C06C84, #6C5B7B);"></span>
+        <span style="background: linear-gradient(#F7E1D7,#EDAFB8 ,#AEC5EB, #3A405A);"></span>
+        <span style="background: linear-gradient(#DABCB2,#CEAA9A ,#B5927F, #A17A69);"></span>
