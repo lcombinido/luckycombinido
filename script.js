@@ -10,5 +10,17 @@ themeColor.forEach(color => color.addEventListener('mouseover', () =>{
     document.querySelector('body').style.background = background;
 }));
 
+$(document).ready(function(){
 
-console.log("Hello World")
+    $('#menu-bars').click(function(){
+        $(this).toggleClass('fa-times');
+        $('header').toggleClass('toggle');
+    });
+
+    $(window).on('scroll load',function(){
+
+        $('#menu-bars').removeClass('fa-times');
+        $('header').removeClass('toggle');
+    })
+
+});

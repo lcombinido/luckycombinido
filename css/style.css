@@ -11,10 +11,23 @@
 html{
     font-size: 62.5%;
     overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 1.4rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #222;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #2A695E;
 }
 
 body{
-    overflow: hidden;
+    overflow-x: hidden;
     min-height: 100vh;
     display: flex;
     align-items: flex-start;
@@ -339,7 +352,7 @@ header .navbar ul li a:hover{
 }
 
 .contact .row{
-    display: flex;
+    display:flex;
     justify-content: space-between;
     padding-top: 7rem;
     align-items: center;
@@ -406,6 +419,30 @@ header .navbar ul li a:hover{
     color: #eee;
     text-transform: none;
 }
+.contact .share{
+    left: 50%; bottom: 5rem;
+    display: flex;
+    padding-right: .5rem;
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, 0.01);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .5);
+}
+
+.contact .share a{
+    background: rgba(0, 0, 0, .3);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .6);
+    padding: 1rem 2rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.contact .share a:hover{
+    background: #fff;
+    color: #0a0a0a;
+
+}
 
 .theme-toggler{
     background: rgba(255, 255, 255, .2);
@@ -423,4 +460,99 @@ header .navbar ul li a:hover{
     margin: 2rem 2.5rem;
     box-shadow: 0 0 0 .5rem rgba(255, 255, 255, .2),
                 0 1rem 2rem rgba(0,0,0,.4);
+}
+
+#menu-bars{
+    position:absolute;
+    top: 5.5rem; right: 2rem;
+    z-index: 10000;
+    background: rgba(255, 255, 255, .2);
+    color: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    padding: 1rem 1.5rem;
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+/* media  queries */
+@media (max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+    /* header{
+        width: 25rem;
+        background: rgba(255, 255, 255, .2);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
+        backdrop-filter: blur(.4rem);
+        text-align: center;
+        padding:1rem;
+        border-radius:1rem;
+        margin-right: 3rem;
+    }
+
+    .container{
+        height: 63rem;
+        width: 70rem;
+        background: rgba(255, 255, 255, .2);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
+        backdrop-filter: blur(.4rem);
+        border-radius: 1rem;
+        overflow: hidden;
+        flex-wrap: wrap;
+        margin-right: 1rem;
+    } */
+
+}
+
+
+@media (max-width: 991px){
+    header{
+        left: -120%;
+    }
+
+    #menu-bars{
+        display:block;
+
+    }
+
+    header.toggle{
+        left:0%;
+    }
+    /* 
+    .container{
+        height: 70rem;
+        width: 100rem;
+        flex-wrap: wrap;
+        margin-right: 2rem;
+    }
+    .theme-toggler{
+        margin-right: 2.3rem;
+    } */
+}
+
+@media (max-width: 768px){
+    /* html{
+        font-size: 50%;
+    }
+    .container{
+        height: 100rem;
+        width: 100rem;
+        flex-wrap: wrap;
+        margin-right: 2rem;
+    }
+    .theme-toggler{
+        margin-right: 2.3rem;
+    } */
+}
+
+@media (max-width: 479px){
+    /* html{
+        font-size: 35%;
+    } */
 }
