@@ -12,15 +12,14 @@ themeColor.forEach(color => color.addEventListener('mouseover', () =>{
 
 $(document).ready(function(){
 
-    $('#menu-bars').click(function(){
+    $('#menu').click(function(){
         $(this).toggleClass('fa-times');
         $('header').toggleClass('toggle');
     });
 
     $(window).on('scroll load',function(){
 
-        $('#menu-bars').removeClass('fa-times');
+        $('#menu').removeClass('fa-times');
         $('header').removeClass('toggle');
     })
-
 });
