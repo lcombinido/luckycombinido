@@ -12,7 +12,9 @@
     text-decoration: none;
     outline: none; border: none;
     text-transform: capitalize;
-    transition: all .2s linear;
+    transition: all .4s linear;
+    scroll-behavior:smooth;
+
 }
 
 *::selection{
@@ -169,6 +171,32 @@ header .navbar ul li a:hover{
     font-size: 2.5rem;
     color: #eee;
     padding: 2rem 0;
+    text-align: justify;
+}
+
+.home .share{
+    position: absolute;
+    bottom: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+    border-radius: 1rem;
+}
+
+.home .share a{
+    background: rgba(0, 0, 0, .3);
+    box-shadow: 0 .2rem 1rem var(--dark);
+    padding: 1rem 2rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.home .share a:hover{
+    background: var(--dark);    
+    color: #0a0a0a;
+
 }
 
 .about .row{
@@ -229,19 +257,19 @@ header .navbar ul li a:hover{
     flex-wrap: wrap;
     padding: 1rem 0;
     padding-left: 3rem;
-    
 }
 
 .education .box-container .box{
-    width: 27rem;
     margin: 4rem 1rem;
     padding-left: 4rem;
     border-left: .2rem solid #fff;
     position: relative;
+    width: 100rem;
+    height: 15rem;
 }
 
 .education .box-container .box span{
-    font-size: 1.3rem;
+    font-size: 2.5rem;
     background: #222;
     color: #fff;
     border-radius: 5rem;
@@ -249,13 +277,13 @@ header .navbar ul li a:hover{
 }
 
 .education .box-container .box h3{
-    font-size: 2rem;
+    font-size: 3.5rem;
     color: #fff;
     padding-top: 1.5rem;
 }
 
 .education .box-container .box p{
-    font-size: 1.4rem;
+    font-size: 2rem;
     color: #eee;
     padding: 1rem 0;
 }
@@ -273,9 +301,192 @@ header .navbar ul li a:hover{
     background: var(--dark);
 }
 
+.experience .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+.experience h3{
+    padding-top: 4rem;
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+.experience h2{
+    color: #fff;
+
+}
 
 
+.experience .box-container .box{
+    height: 15rem;
+    width: 20rem;
+    border-radius: 1rem;
+    margin: 2rem;    
+    overflow: hidden;
+    cursor: pointer;
+    background: #fff;
+}
+.experience .box-container h1{
+    color: #fff;
+    text-align: center;
+}
 
+.experience .box-container .box img{
+    max-height: 100%;
+    max-width:100%;  
+    object-fit: cover; 
+    
+}
+
+.experience .box-container .box .suncrest{
+    margin-top: 4rem;
+}
+
+.experience .box-container .box .folasade{
+    margin-top: .5rem;
+}
+
+.experience .box-container .box .wiio{
+    margin-top: 2rem;
+}
+
+.experience .box-container .box:hover img{
+    transform: scale(1.2);
+}
+
+.experience .box-container2 .box2:hover{
+    transform: scale(1.1);
+    box-shadow: 0 1rem 1.5rem rgba(255, 255, 255, .5);
+}
+.experience .box-container2{
+    padding: 0.1rem 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.experience .box-container2 .box2 img{
+    height:9rem;
+    width:9rem;
+}
+
+.experience .box-container2 .box2{
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: var(--dark);
+    text-align: center;
+    width: 38rem;
+    height: 15rem;
+}
+.experience .box-container2 .box2 i{
+    color: #fff;
+    font-size: 7rem;
+    padding: 1rem 0;
+}
+.experience .box-container2 .box2 p{
+    color: #eee;
+    font-size: 2rem;
+    padding: .5rem 5rem;
+    
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact .row{
+    display:flex;
+    justify-content: space-between;
+    padding-top: 7rem;
+    align-items: center;
+}
+
+.contact .row .content{
+    padding: 0 5rem;
+}
+
+.contact .row .content .icons{
+    padding: 1rem 0;
+}
+
+.contact .row .content .icons h3{
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: #fff;
+    display: flex;
+}
+
+.contact .row .content .icons h3 i{
+    padding-right: .5rem;
+}
+
+.contact .row .content .icons p{
+    font-size: 1.5rem;
+    color: #eee;
+    text-transform: none;
+}
+.contact .share{
+    bottom: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+    border-radius: 1rem;
+   
+}
+
+.contact .share a{
+    background: rgba(0, 0, 0, .3);
+    box-shadow: 0 .2rem 1rem var(--dark);
+    padding: 1rem 2rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.contact .share a:hover{
+    background: var(--dark);    
+    color: #0a0a0a;
+
+}
+
+.top{
+    color: #fff;
+    position:fixed;
+    bottom: 5rem; right: 1rem;
+    z-index: 100;
+    font-size: 3rem;
+    display: none;
+}
+
+/* .theme-toggler{
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    border-radius: 1rem;
+    backdrop-filter: blur(.4rem);
+    background: white  
+
+}
+
+.theme-toggler span{
+    display: block;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 2rem 2.5rem;
+    box-shadow: 0 0 0 .5rem rgba(255, 255, 255, .2),
+                0 1rem 2rem rgba(0,0,0,.4);
+} */
 
 
 
@@ -303,8 +514,8 @@ header .navbar ul li a:hover{
     body{
         padding: 0;
     }
-    
 }
+
 @media (max-width:768px) {
     html{
         font-size: 45%;
