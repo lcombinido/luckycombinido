@@ -65,7 +65,10 @@ section{
 
 .btn:hover{
     background: var(--dark);
+    
 }
+
+
 
 .heading{
     text-align: center;
@@ -151,7 +154,6 @@ header .navbar ul li a:hover{
 
 header .theme-toggler{
     background: rgba(255, 255, 255, .2);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
     border-radius: 1rem;
     backdrop-filter: blur(.4rem);
     width: 30rem;
@@ -183,7 +185,22 @@ header h2{
 }
 .home .btn{
     margin-top: 5rem;
+    animation: blinkButton 2s infinite;
+    background: linear-gradient(#0A043C,#150E56,#03506F);
+    box-shadow: 0 0 20px #2196f3,  0 0 50px #2196f3, 0 0 10px #2196f3;
 }
+
+@keyframes blinkButton {
+    0%{opacity: 0.1;}
+    100%{opacity: 1;}
+}
+
+.home .btn:hover{
+    color: white;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3,  0 0 40px #2196f3, 0 0 80px #2196f3;
+}
+
 .home h1{
     font-size: 5rem;
     color: #fff;
@@ -503,7 +520,12 @@ header h2{
     display: none;
 }
 .top p{
+    display: none;
     font-size: 1.5rem;
+}
+
+.top:hover p{
+    display: block;
 }
 
 footer p{
