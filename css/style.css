@@ -149,11 +149,40 @@ header .navbar ul li a:hover{
     display: none;
 }
 
+header .theme-toggler{
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    border-radius: 1rem;
+    backdrop-filter: blur(.4rem);
+    width: 30rem;
+}
+
+header .theme-toggler span{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 5rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: .5rem .5rem;
+    box-shadow: 0 0 0 .5rem rgba(255, 255, 255, .2),
+                0 1rem 2rem rgba(0,0,0,.4);
+}
+
+header h2{
+    color: #fff;
+}
+
 .home{
     display: flex;
     justify-content: center;
     flex-flow: column;
     padding: 0 15rem;
+}
+.home .btn{
+    margin-top: 5rem;
 }
 .home h1{
     font-size: 5rem;
@@ -161,6 +190,12 @@ header .navbar ul li a:hover{
 }
 .home h1 span{
     color: var(--dark);
+}
+.home h3 span{
+    color: var(--dark);
+}
+.home .post{
+    margin-top: 2rem;
 }
 .home h3{
     font-size: 2.5rem;
@@ -398,16 +433,16 @@ header .navbar ul li a:hover{
 }
 
 .contact{
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: space-evenly;
 }
-
 .contact .row{
     display:flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-top: 7rem;
     align-items: center;
+    margin: 1rem;
 }
 
 .contact .row .content{
@@ -467,27 +502,23 @@ header .navbar ul li a:hover{
     font-size: 3rem;
     display: none;
 }
+.top p{
+    font-size: 1.5rem;
+}
 
-/* .theme-toggler{
+footer p{
     background: rgba(255, 255, 255, .2);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
     border-radius: 1rem;
     backdrop-filter: blur(.4rem);
-    background: white  
-
+    max-width: 100%;
+    display: flex;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #fff;
+    justify-content: center;
 }
-
-.theme-toggler span{
-    display: block;
-    height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
-    cursor: pointer;
-    margin: 2rem 2.5rem;
-    box-shadow: 0 0 0 .5rem rgba(255, 255, 255, .2),
-                0 1rem 2rem rgba(0,0,0,.4);
-} */
-
 
 
 
@@ -514,12 +545,22 @@ header .navbar ul li a:hover{
     body{
         padding: 0;
     }
+    /* .contact footer p{
+        margin-top: 20rem;
+   
+       } */
 }
 
 @media (max-width:768px) {
     html{
         font-size: 45%;
     }
+    /* .contact footer p{
+     margin-top: 30rem;
+     margin-bottom: .5rem;
+
+    } */
+
 }
 
 @media (max-width:400px) {
@@ -534,5 +575,9 @@ header .navbar ul li a:hover{
     .about .row .counter .box{
         width: 100%;
     }
+    /* .contact footer p{
+        margin-top: 25rem;
+   
+       } */
 }
 

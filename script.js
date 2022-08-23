@@ -8,6 +8,8 @@ let themeColor = document.querySelectorAll('.theme-toggler span');
 themeColor.forEach(color => color.addEventListener('mouseover', () =>{
     let background = color.style.background
     document.querySelector('body').style.background = background;
+    $('#menu').removeClass('fa-times');
+    $('header').removeClass('toggle');
 }));
 
 $(document).ready(function(){
