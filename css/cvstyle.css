@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Poppins:wght@100;300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
+
+}
+html{
+    font-size: 62.5%;  
+}
+
+.print-area{
+    width: 80%;
+    margin: 20px auto;
+}
+
+.print-area .header{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(31, 34, 43);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 65px;
+    border: 5px solid white;
+    box-shadow: 3px 3px 10px rgb(0,0,0,.5);
+    cursor: pointer;
+    transition: .5s;
+    user-select: none;
+    filter: grayscale(100%);
+}
+
+.header img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    box-shadow: 3px 3px 10px rgb(0,0,0,.5);
+}
+
+.header-text{
+    color: white;
+    width: 60%;
+    margin-left: auto;
+}
+.header-text h1{
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+.header-text p{
+    font-size: 2.5rem;
+    color: lightgray;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-area{
+    width: 30%;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.left-area .contact{
+    margin-top: 130px;
+    padding: 0 30px;
+}
+
+.contact h4{
+    font-size: 4rem;
+    font-weight: normal;
+    margin: 20px 0;
+}
+
+.contact i{
+    font-size: 2rem;
+}
+
+.contact p{
+    font-size: 1.2rem;
+}
+
+.skills h4{
+    margin: 20px 0;
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+.skills .icons{
+    max-width: 100%;
+    align-items: center;
+}
+.skills i{
+    
+    font-size: 5rem;
+    color: black;
+}
+.skills img{
+    height: 4rem;
+    width: 5rem;
+}
+
+.follow h4{
+    margin: 20px 0;
+    font-size: 4rem;
+    font-weight: normal; 
+}
+.follow p{
+    font-size: 1.2rem;
+
+}
+
+
+
+.right-area{
+    width: 70%;
+    padding: 50px ;
+    background-color: #f7f7f7;
+}
+
+.right-area h1{
+    font-size: 4rem;
+    font-weight: normal
+}
+
+.right-area h1 span{
+    margin-right: 1rem;
+    font-size: 4rem;
+    color: lightgray;
+}
+
+.right-area p{
+    padding-left: 5rem;
+    text-align: justify;
+    word-break: break-all;
+    font-size: 1.4rem;
+    color: gray;
+    margin-top: 1rem;
+}

@@ -6,6 +6,13 @@ color pallete = https://www.bing.com/images/search?view=detailV2&ccid=rHjfH1bi&i
 #CBB89A -LIGHT BROWN
 
 
+git add .
+git commit -m "desc"
+git push
+
+
+
+
 #0a0a0a,#012120,#0a2328, #013a33, #2A695E 
 
 https://www.youtube.com/watch?v=gmY-AUbdTUo
