@@ -67,8 +67,6 @@ section{
     
 }
 
-
-
 .heading{
     text-align: center;
     margin: 0 6rem;
@@ -202,6 +200,8 @@ header h2{
     color: white;
     background: #2196f3;
     box-shadow: 0 0 10px #2196f3,  0 0 40px #2196f3, 0 0 80px #2196f3;
+    animation:none;
+
 }
 
 .home h1{
@@ -216,6 +216,8 @@ header h2{
 }
 .home .post{
     margin-top: 2rem;
+    text-transform: none;
+
 }
 .home h3{
     font-size: 2.5rem;

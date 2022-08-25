@@ -36,16 +36,8 @@ html{
     border: 5px solid white;
     box-shadow: 3px 3px 10px rgb(0,0,0,.5);
     cursor: pointer;
-    transition: .5s;
-    user-select: none;
-    filter: grayscale(100%);
 }
 
-.header img:hover{
-    filter: grayscale(0%);
-    transform: scale(1.05);
-    box-shadow: 3px 3px 10px rgb(0,0,0,.5);
-}
 
 .header-text{
     color: white;
@@ -78,10 +70,21 @@ html{
     padding: 0 30px;
 }
 
-.contact h4{
-    font-size: 4rem;
-    font-weight: normal;
+.contact{
+    margin-top: 0;
+}
+
+.contact .title {
+    display: flex;
+    justify-content: center;
+}
+
+.contact h4 {
     margin: 20px 0;
+    font-size: 3.5rem;
+    width: 25rem;
+    font-weight: normal;
+    border-bottom: black 1px solid;
 }
 
 .contact i{
@@ -92,10 +95,21 @@ html{
     font-size: 1.2rem;
 }
 
-.skills h4{
+.skills{
+    margin-top: 0;
+}
+
+.skills .title {
+    display: flex;
+    justify-content: center;
+}
+
+.skills h4 {
     margin: 20px 0;
-    font-size: 4rem;
+    font-size: 3.5rem;
+    width: 25rem;
     font-weight: normal;
+    border-bottom: black 1px solid;
 }
 
 .skills .icons{
@@ -112,17 +126,70 @@ html{
     width: 5rem;
 }
 
-.follow h4{
+.follow {
+    margin-top: 0;
+}
+
+.follow .title {
+    display: flex;
+    justify-content: center;
+}
+
+.follow h4 {
     margin: 20px 0;
-    font-size: 4rem;
-    font-weight: normal; 
+    font-size: 3.5rem;
+    width: 25rem;
+    font-weight: normal;
+    border-bottom: black 1px solid;
 }
 .follow p{
     font-size: 1.2rem;
 
 }
+.follow i{
+    font-size: 2rem;
+}
 
 
+/* .language .title {
+    display: flex;
+    justify-content: center;
+}
+
+.language h4 {
+    margin: 20px 0;
+    font-size: 3.5rem;
+    width: 25rem;
+    font-weight: normal;
+    border-bottom: black 1px solid;
+}
+
+.language p{
+    font-size: 1.5rem;
+}
+
+.country .title {
+    display: flex;
+    justify-content: center;
+}
+.country h4 {
+    margin: 20px 0;
+    font-size: 3.5rem;
+    width: 25rem;
+    font-weight: normal;
+    border-bottom: black 1px solid;
+}
+
+.country p{
+    font-size: 1.5rem;
+} */
+
+
+
+
+
+
+/* RIGHT AREA */
 
 .right-area{
     width: 70%;
@@ -131,8 +198,10 @@ html{
 }
 
 .right-area h1{
-    font-size: 4rem;
-    font-weight: normal
+    font-size: 3rem;
+    font-weight: bold;
+    color:#fff;
+    background: #656464;
 }
 
 .right-area h1 span{
@@ -148,4 +217,226 @@ html{
     font-size: 1.4rem;
     color: gray;
     margin-top: 1rem;
+}
+
+.about p{
+    padding-left: 45px;
+}
+
+.work-group{
+    margin: 20px 0;
+}
+
+.work .work-group{
+    position: relative;
+}
+
+.work-group h3{
+    font-size: 22px;
+    font-weight: normal;
+    padding-left: 20px;
+}
+
+.work-group h4{
+    font-size: 18px;
+    padding-left: 20px;
+    font-weight: normal;
+    color: gray;
+}
+
+.work-group span{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+.work-group p{
+    padding-left: 45px;
+}
+
+.education{
+    margin-top: 30px;
+}
+
+.edu-group{
+    position: relative;
+    margin-top: 10px;
+
+}
+
+.edu-group h4{
+    padding-left: 15px;
+    font-size:  20px;
+    font-weight: normal;
+}
+.edu-group span{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.edu-group p{
+    padding-left: 35px;
+}
+
+
+.print-button{
+    padding: 10px 10px;
+    font-size: 2rem;
+    margin-left: 150px;
+    animation: blinkButton 2s infinite;
+    box-shadow: 0 0 10px #333,  0 0 40px gray, 0 0 80px lightgray;
+    transition: .2s;
+}
+    
+@keyframes blinkButton {
+    0%{opacity: 0.1;}
+    100%{opacity: 1;}
+}
+
+.print-button:hover{
+    color: white;
+    border: none;
+    background: #2196f3;
+    animation:none;
+    
+}
+
+
+@media print{
+    body *{
+        visibility: hidden;   
+    }
+
+    .print-area *{
+        visibility: visible;
+    }
+}
+
+
+
+
+/* media queries */
+@media (max-width:1200px) {
+    html{
+        font-size: 55%;
+    }
+    .header img{
+        width: 170px;
+        height: 170px;
+        top: 60px;
+        left: 45px;
+        filter: grayscale(0%);
+    }
+    .skills i{
+        font-size: 3.5rem;  
+    }
+    .skills img{
+        height: 3rem;
+        width: 3.5rem;
+    }
+    .follow i{
+        font-size: 2.5rem;  
+    }
+    .follow p{
+        font-size: 1rem;  
+    }
+}
+
+@media (max-width:991px) {
+
+    .print-button{
+        visibility: hidden;
+    }
+    .print-area .header{
+        height: 100px;
+    }
+    .header img{
+        width: 150px;
+        height: 150px;
+        top: 40px;
+        left: 45px;
+        filter: grayscale(0%);
+    }
+    .contact h4{
+        font-size: 3rem;
+    }
+    .contact p{
+        font-size:1.2rem;
+    }
+
+    .skills h4{
+        font-size: 3rem;
+        width: 15rem;
+
+    }
+    .follow h4{
+        font-size: 3rem;
+    }
+
+    .skills i{
+        font-size: 3rem;  
+    }
+    .skills img{
+        height: 2.5rem;
+        width: 3.5rem;
+    }
+    
+
+    
+}
+
+@media (max-width:768px) {
+
+    .header img{
+        width: 130px;
+        height: 130px;
+        left: 30px;
+    }
+    .header-text{
+        color: white;
+        width: 60%;
+        margin-left: auto;
+    }
+    .header-text h1{
+        font-size: 3rem;
+        font-weight: normal;
+    }
+    
+    .header-text p{
+        font-size: 2rem;
+
+    }
+
+    .right-area h1{
+        font-size: 2rem;  
+    }
+    .skills i{
+        font-size: 2.5rem;  
+    }
+    .skills h4{
+        font-size: 3rem;
+    }
+
+    .work-group span{
+        top: 10px;
+        font-size: 10px;
+    }
+    
+    .work-group h3{
+        font-size: 15px;
+    }
+    
+    .work-group h4{
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width:400px) {
+    
 }
