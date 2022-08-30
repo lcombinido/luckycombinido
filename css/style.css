@@ -140,6 +140,68 @@ header .navbar ul li a:hover{
     background: var(--dark);
 }
 
+.wrapper{
+    position: absolute;
+    height: 10rem;
+    width: 30rem;
+    bottom: 10rem;
+    flex-wrap: wrap;
+    align-items:center;
+    display: flex;
+    left: 45rem;
+    justify-content: center;
+    
+}
+.like{
+    text-align: center;
+
+}
+.dis-like{
+    text-align: center;
+
+}
+
+.like #likeCount{
+    margin-top: 1rem;
+    /* background: red; */
+
+}
+
+.like i{
+   
+    font-size: 4rem;
+    color: gray;
+    cursor: pointer;
+    transition: .5s;
+}
+.like i:hover {
+    color: red;
+    transform: scale(1.2);
+}
+.dis-like i{
+    margin-top:1rem;
+    font-size: 4rem;
+    color: gray;
+    cursor: pointer;
+    transition: .5s;
+}
+.dis-like i:hover {
+    color: #444;
+    transform: scale(1.2);
+}
+input{
+    padding-top: 1rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    background: none;
+    font-size: 1.2rem;
+    pointer-events: none;
+    color: white ;
+    align-items: left;
+}
+
 
 #menu{
     position: fixed;
